@@ -5,6 +5,7 @@
     },
     "extends": [
         "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
         "airbnb"
     ],
     "globals": {
@@ -25,17 +26,34 @@
         "import"
     ],
     "rules": {
-        "import/no-unresolved": 0,
-        "import/extensions": [
-           "error",
-           "ignorePackages",
-           {
-             ".js": "never",
-             ".jsx": "never",
-             ".ts": "never",
-             ".tsx": "never"
-           }
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".jsx",
+                    ".tsx"
+                ]
+            }
         ],
-        "react/jsx-filename-extension": [0]
-     }
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ",jsx", ".ts", ".tsx"]
+            }
+        }
+    }
 }
