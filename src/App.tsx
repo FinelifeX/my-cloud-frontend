@@ -1,11 +1,13 @@
 import React from 'react';
+import { Header, SideMenu, HorizontalFlexbox } from 'components';
 
 const App: React.FC = () => (
-  <div>
-    <form>
-      <input />
-    </form>
-  </div>
+  <>
+    <Header />
+    <HorizontalFlexbox>
+      <SideMenu />
+    </HorizontalFlexbox>
+  </>
 );
 
 export default App;
