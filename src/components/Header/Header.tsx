@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { HorizontalFlexbox, Button } from 'components/shared';
-import { Logo, Avatar } from './components';
+import { Logo, Avatar } from './styles';
 
 export const Header: React.FC = (props) => {
   const smt = '';

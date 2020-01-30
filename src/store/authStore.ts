@@ -2,7 +2,7 @@ import { action, computed, observable } from 'mobx';
 
 class AuthStore {
   @observable
-  profile: {} | null = {};
+  profile: {} | null = null;
 
   @action
   authenticate(profile: any): void {

@@ -1,6 +1,9 @@
-import { Colors } from 'constants/colors';
-import { Fonts } from 'constants/fonts';
 import styled from 'styled-components';
+import { Fonts, Colors } from 'constants/index';
+
+export const Avatar = styled.i`
+  font-size: 1.4rem;
+`;
 
 export const Logo = styled.a`
   font-family: ${Fonts.BANGERS};

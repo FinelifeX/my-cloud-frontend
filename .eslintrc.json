@@ -5,8 +5,8 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended",
         "airbnb",
+        "plugin:@typescript-eslint/recommended",
         "plugin:import/typescript"
     ],
     "globals": {
@@ -58,5 +58,13 @@
                 "paths": ["src"]
             }
         }
-    }
+    },
+    "overrides": [
+        {
+            "files": ["**/*.tsx"],
+            "rules": {
+                "react/prop-types": "off"
+            }
+        }
+    ]
 }

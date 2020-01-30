@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 
-export const Login: FC = () => {
+export const Main: FC = () => {
   const smt = '';
 
   return (
-    <div />
+    <div>Main</div>
   );
 };
