@@ -1,11 +1,12 @@
-import styled from 'styled-components';
-import { Fonts } from 'constants/fonts';
 import { Colors } from 'constants/colors';
+import { Fonts } from 'constants/fonts';
+import styled from 'styled-components';
 
 export const Logo = styled.a`
-  font-family: ${Fonts.PACIFICO};
+  font-family: ${Fonts.BANGERS};
+  font-weight: 500;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: ${Colors.BREEZE};
   letter-spacing: 2px;
 

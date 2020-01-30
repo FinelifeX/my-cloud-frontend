@@ -1,11 +1,11 @@
-import styled from 'styled-components';
 import { Colors } from 'constants/colors';
 import { Fonts } from 'constants/fonts';
+import styled from 'styled-components';
 
 export const Button = styled.button`
   font-family: ${Fonts.COMFORTAA};
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: ${Colors.BREEZE};
   border-radius: 8px;
   border: 1px solid ${Colors.BREEZE}; 

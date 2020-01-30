@@ -1,13 +1,20 @@
 import React from 'react';
-import { Header, SideMenu, HorizontalFlexbox } from 'components';
+import { observer } from 'mobx-react';
+import { authStore } from 'store';
+import { Main, Login } from 'scenes';
 
-const App: React.FC = () => (
-  <>
-    <Header />
-    <HorizontalFlexbox>
-      <SideMenu />
-    </HorizontalFlexbox>
-  </>
-);
+const App: React.FC = observer(() => {
+  const { isAuth } = authStore;
+
+  return (
+    <>
+      {isAuth ? (
+        <Main />
+      ) : (
+        <Login />
+      )}
+    </>
+  );
+});
 
 export default App;
