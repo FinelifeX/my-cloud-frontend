@@ -1,9 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
 export const Login: FC = () => {
-  const smt = '';
+  const smt = "";
 
-  return (
-    <div>Login</div>
-  );
+  return <div>Login</div>;
 };

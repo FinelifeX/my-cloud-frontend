@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Fonts, Colors } from 'constants/index';
+import styled from "styled-components";
+import { Fonts, Colors } from "constants/index";
 
 export const Avatar = styled.i`
   font-size: 1.4rem;

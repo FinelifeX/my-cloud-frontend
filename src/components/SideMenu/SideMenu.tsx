@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { Button, List } from 'components/shared';
+import * as React from "react";
+import { Button, List } from "components/shared";
 
 export const SideMenu: React.FC = () => {
-  const smt = '';
+  const smt = "";
 
   return (
     <aside>

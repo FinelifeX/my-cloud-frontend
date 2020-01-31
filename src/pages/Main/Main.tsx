@@ -1,9 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
 export const Main: FC = () => {
-  const smt = '';
+  const smt = "";
 
-  return (
-    <div>Main</div>
-  );
+  return <div>Main</div>;
 };

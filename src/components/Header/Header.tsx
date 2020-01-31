@@ -1,17 +1,19 @@
-import * as React from 'react';
-import { HorizontalFlexbox, Button } from 'components/shared';
-import { Logo, Avatar } from './styles';
+import * as React from "react";
+import { HorizontalFlexbox, Button } from "components/shared";
+import { Logo, Avatar } from "./styles";
 
-export const Header: React.FC = (props) => {
-  const smt = '';
+export const Header: React.FC = props => {
+  const smt = "";
 
   return (
     <header>
-      <HorizontalFlexbox justify="space-between" align="center" padding="0 16px">
+      <HorizontalFlexbox
+        justify="space-between"
+        align="center"
+        padding="0 16px"
+      >
         <div>
-          <Logo href="#">
-            Neon Clouds
-          </Logo>
+          <Logo href="#">Neon Clouds</Logo>
         </div>
         <HorizontalFlexbox justify="space-around" align="center" wrap>
           <div>
@@ -19,9 +21,7 @@ export const Header: React.FC = (props) => {
             &nbsp; USERNAME
           </div>
           <div>
-            <Button>
-              Logout
-            </Button>
+            <Button>Logout</Button>
           </div>
         </HorizontalFlexbox>
       </HorizontalFlexbox>
