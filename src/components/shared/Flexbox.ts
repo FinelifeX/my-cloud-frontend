@@ -11,14 +11,16 @@ type FlexboxProps = {
   align?: "center" | "stretch" | "baseline" | "flex-start" | "flex-end";
   padding?: string;
   wrap?: boolean;
+  direction?: "row" | "column";
 };
 
-const Flexbox = styled.div<FlexboxProps>`
+export const Flexbox = styled.div<FlexboxProps>`
   display: flex;
-  justify-content: ${(props): string => props.justify || "flex-start"};
-  align-items: ${(props): string => props.align || "flex-start"};
-  padding: ${(props): string => props.padding || "0"};
-  flex-wrap: ${(props): string => (props.wrap ? "wrap" : "no-wrap")};
+  flex-direction: ${props => props.direction || "row"};
+  justify-content: ${props => props.justify || "flex-start"};
+  align-items: ${props => props.align || "flex-start"};
+  padding: ${props => props.padding || "0"};
+  flex-wrap: ${props => (props.wrap ? "wrap" : "no-wrap")};
 
   & div {
     margin: 6px 0 6px 0;
@@ -31,12 +33,4 @@ const Flexbox = styled.div<FlexboxProps>`
       margin-right: 8px;
     }
   }
-`;
-
-export const HorizontalFlexbox = styled(Flexbox)`
-  flex-direction: row;
-`;
-
-export const VerticalFlexbox = styled(Flexbox)`
-  flex-direction: column;
 `;

@@ -1,5 +1,7 @@
 import { action, computed, observable } from "mobx";
 
+const isMock = true;
+
 class AuthStore {
   @observable
   profile: {} | null = null;
@@ -16,7 +18,7 @@ class AuthStore {
 
   @computed
   get isAuth(): boolean {
-    return !!this.profile;
+    return isMock || !!this.profile;
   }
 }
 

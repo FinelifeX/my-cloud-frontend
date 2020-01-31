@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HorizontalFlexbox, Button } from "components/shared";
+import { Flexbox, Button } from "components/shared";
 import { Logo, Avatar } from "./styles";
 
 export const Header: React.FC = props => {
@@ -7,15 +7,11 @@ export const Header: React.FC = props => {
 
   return (
     <header>
-      <HorizontalFlexbox
-        justify="space-between"
-        align="center"
-        padding="0 16px"
-      >
+      <Flexbox justify="space-between" align="center" padding="0 16px">
         <div>
-          <Logo href="#">Neon Clouds</Logo>
+          <Logo href="/">Neon Clouds</Logo>
         </div>
-        <HorizontalFlexbox justify="space-around" align="center" wrap>
+        <Flexbox justify="space-around" align="center" wrap>
           <div>
             <Avatar className="fas fa-user" />
             &nbsp; USERNAME
@@ -23,8 +19,8 @@ export const Header: React.FC = props => {
           <div>
             <Button>Logout</Button>
           </div>
-        </HorizontalFlexbox>
-      </HorizontalFlexbox>
+        </Flexbox>
+      </Flexbox>
     </header>
   );
 };
