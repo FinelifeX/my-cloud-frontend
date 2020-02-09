@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Flexbox, Button } from "components/shared";
-import { Logo, Avatar } from "./styles";
+import { Logo, Avatar, HeaderWrapper } from "./styles";
 
 export const Header: React.FC = props => {
   const smt = "";
 
   return (
-    <header>
+    <HeaderWrapper>
       <Flexbox justify="space-between" align="center" padding="0 16px">
         <div>
           <Logo href="/">Neon Clouds</Logo>
@@ -21,6 +21,6 @@ export const Header: React.FC = props => {
           </div>
         </Flexbox>
       </Flexbox>
-    </header>
+    </HeaderWrapper>
   );
 };

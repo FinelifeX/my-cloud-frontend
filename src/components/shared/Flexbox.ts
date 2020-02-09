@@ -12,6 +12,7 @@ type FlexboxProps = {
   padding?: string;
   wrap?: boolean;
   direction?: "row" | "column";
+  height?: string;
 };
 
 export const Flexbox = styled.div<FlexboxProps>`
@@ -21,8 +22,9 @@ export const Flexbox = styled.div<FlexboxProps>`
   align-items: ${props => props.align || "flex-start"};
   padding: ${props => props.padding || "0"};
   flex-wrap: ${props => (props.wrap ? "wrap" : "no-wrap")};
+  height: ${props => props.height || "unset"};
 
-  & div {
+  div {
     margin: 6px 0 6px 0;
 
     &:not(:first-child) {

@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { Fonts, Colors } from "constants/index";
 
+export const HeaderWrapper = styled.header`
+  width: 100%;
+  flex: 1;
+`;
+
 export const Avatar = styled.i`
   font-size: 1.4rem;
 `;

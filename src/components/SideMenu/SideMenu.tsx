@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Button, List } from "components/shared";
 import { navigate } from "@reach/router";
+import { SideMenuWrapper } from "./styles";
 
 export const SideMenu: React.FC = () => {
   const redirect = (route: string) => {
@@ -8,7 +9,7 @@ export const SideMenu: React.FC = () => {
   };
 
   return (
-    <aside>
+    <SideMenuWrapper>
       <List>
         <List.Item>
           <Button
@@ -51,6 +52,6 @@ export const SideMenu: React.FC = () => {
           </Button>
         </List.Item>
       </List>
-    </aside>
+    </SideMenuWrapper>
   );
 };
