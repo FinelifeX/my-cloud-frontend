@@ -1,4 +1,4 @@
 export enum Fonts {
-  BANGERS = "'Bangers', cursive",
+  LEMONADA = "'Lemonada', cursive",
   COMFORTAA = "'Comfortaa', cursive"
 }

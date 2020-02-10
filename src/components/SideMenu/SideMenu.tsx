@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button, List } from "components/shared";
+import { Button, List, ListItem } from "components/shared";
 import { navigate } from "@reach/router";
 import { SideMenuWrapper } from "./styles";
 
@@ -11,7 +11,7 @@ export const SideMenu: React.FC = () => {
   return (
     <SideMenuWrapper>
       <List>
-        <List.Item>
+        <ListItem>
           <Button
             onClick={() => {
               redirect("/upload");
@@ -20,8 +20,8 @@ export const SideMenu: React.FC = () => {
             <i className="fas fa-plus" />
             &nbsp; Upload
           </Button>
-        </List.Item>
-        <List.Item>
+        </ListItem>
+        <ListItem>
           <Button
             onClick={() => {
               redirect("/files");
@@ -30,8 +30,8 @@ export const SideMenu: React.FC = () => {
             <i className="fas fa-file-alt" />
             &nbsp; Files
           </Button>
-        </List.Item>
-        <List.Item>
+        </ListItem>
+        <ListItem>
           <Button
             onClick={() => {
               redirect("/photos");
@@ -40,8 +40,8 @@ export const SideMenu: React.FC = () => {
             <i className="fas fa-image" />
             &nbsp; Photos
           </Button>
-        </List.Item>
-        <List.Item>
+        </ListItem>
+        <ListItem>
           <Button
             onClick={() => {
               redirect("/videos");
@@ -50,7 +50,7 @@ export const SideMenu: React.FC = () => {
             <i className="fas fa-video" />
             &nbsp; Videos
           </Button>
-        </List.Item>
+        </ListItem>
       </List>
     </SideMenuWrapper>
   );

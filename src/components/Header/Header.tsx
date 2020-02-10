@@ -9,7 +9,7 @@ export const Header: React.FC = props => {
     <HeaderWrapper>
       <Flexbox justify="space-between" align="center" padding="0 16px">
         <div>
-          <Logo href="/">Neon Clouds</Logo>
+          <Logo href="/">Head In The Clouds</Logo>
         </div>
         <Flexbox justify="space-around" align="center" wrap>
           <div>

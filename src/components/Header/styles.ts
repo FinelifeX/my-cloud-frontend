@@ -11,15 +11,15 @@ export const Avatar = styled.i`
 `;
 
 export const Logo = styled.a`
-  font-family: ${Fonts.BANGERS};
+  font-family: ${Fonts.LEMONADA};
   font-weight: 500;
   text-decoration: none;
-  font-size: 2.5rem;
-  color: ${Colors.BREEZE};
-  letter-spacing: 2px;
+  font-size: 2rem;
+  color: ${Colors.ACCENT};
+  letter-spacing: 1px;
 
   &:hover {
-    color: ${Colors.YELLOW};
-    text-shadow: 2px 2px ${Colors.VIOLET_PALE};
+    color: ${Colors.ELEMENTS};
+    text-shadow: 2px 2px ${Colors.ACCENT};
   }
 `;

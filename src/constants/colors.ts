@@ -1,7 +1,6 @@
 export enum Colors {
-  INDIGO = "#151965",
-  INDIGO_PALE = "#32407b",
-  VIOLET_PALE = "#515585",
-  BREEZE = "#46b5d1",
-  YELLOW = "#E8BA43"
+  TEXT = "#ffc2c2",
+  BODY = "#010a43",
+  ELEMENTS = "#ff9d9d",
+  ACCENT = "#ff2e63"
 }
