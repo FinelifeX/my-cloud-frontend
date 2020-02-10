@@ -1,4 +1,5 @@
 export * from "./Header";
 export * from "./shared";
-export * from "./SideMenu";
+export * from "./Navigation";
 export * from "./Footer";
+export * from "./Content";

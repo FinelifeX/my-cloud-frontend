@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Header, Flexbox, SideMenu, Footer } from "components";
+import { Header, Flexbox, Navigation, Footer, Content } from "components";
 import { MainWrapper } from "./styles";
 
 export const Main: FC = () => {
@@ -7,10 +7,11 @@ export const Main: FC = () => {
 
   return (
     <>
-      <Flexbox justify="space-evenly" height="100%" direction="column">
+      <Flexbox justify="space-evenly" direction="column">
         <Header />
-        <MainWrapper align="center" justify="space-between">
-          <SideMenu />
+        <MainWrapper align="center" justify="flex-start">
+          <Navigation />
+          <Content />
         </MainWrapper>
         <Footer />
       </Flexbox>

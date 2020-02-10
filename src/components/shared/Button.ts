@@ -13,6 +13,7 @@ export const Button = styled.button`
   padding: 0.5rem 1rem;
   background: transparent;
   cursor: pointer;
+  margin: 2px;
 
   &:hover {
     color: ${Colors.TEXT};

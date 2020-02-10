@@ -24,6 +24,7 @@
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+    "react/prop-types": "off"
   }
 }

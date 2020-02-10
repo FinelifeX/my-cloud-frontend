@@ -1,25 +1,29 @@
 import * as React from "react";
-import { Flexbox, Button } from "components/shared";
-import { Logo, Avatar, HeaderWrapper } from "./styles";
+import { Flexbox, Button, FlexItem } from "components/shared";
+import {
+  Logo,
+  AvatarWrapper,
+  HeaderWrapper,
+  AvatarIcon,
+  UserInfoWrapper
+} from "./styles";
 
-export const Header: React.FC = props => {
+export const Header: React.FC = () => {
   const smt = "";
 
   return (
     <HeaderWrapper>
-      <Flexbox justify="space-between" align="center" padding="0 16px">
-        <div>
+      <Flexbox justify="space-between" align="center" padding="0 12px">
+        <FlexItem flex={10}>
           <Logo href="/">Head In The Clouds</Logo>
-        </div>
-        <Flexbox justify="space-around" align="center" wrap>
-          <div>
-            <Avatar className="fas fa-user" />
-            &nbsp; USERNAME
-          </div>
-          <div>
-            <Button>Logout</Button>
-          </div>
-        </Flexbox>
+        </FlexItem>
+        <UserInfoWrapper flex={3}>
+          <AvatarWrapper>
+            <AvatarIcon className="fas fa-user" />
+          </AvatarWrapper>
+          &nbsp; USERNAME &nbsp;
+          <Button>Logout</Button>
+        </UserInfoWrapper>
       </Flexbox>
     </HeaderWrapper>
   );
