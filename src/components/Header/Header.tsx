@@ -1,16 +1,13 @@
-import * as React from "react";
-import { Flexbox, Button, FlexItem } from "components/shared";
+import * as React from 'react';
+import { Flexbox, Button, FlexItem, Logo } from 'components/shared';
 import {
-  Logo,
   AvatarWrapper,
   HeaderWrapper,
   AvatarIcon,
-  UserInfoWrapper
-} from "./styles";
+  UserInfoWrapper,
+} from './styles';
 
 export const Header: React.FC = () => {
-  const smt = "";
-
   return (
     <HeaderWrapper>
       <Flexbox justify="space-between" align="center" padding="0 12px">

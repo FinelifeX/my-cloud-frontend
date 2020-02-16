@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 interface FlexItemProps {
   flex?: number;
 }
 
 export const FlexItem = styled.div<FlexItemProps>`
-  flex: ${props => props.flex || 1};
+  flex: ${(props) => props.flex || 1};
 `;

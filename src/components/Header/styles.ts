@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Fonts, Colors } from "constants/index";
-import { Flexbox, FlexItem } from "components/shared";
+import styled from 'styled-components';
+import { Colors } from 'constants/index';
+import { FlexItem } from 'components/shared';
 
 export const HeaderWrapper = styled.header`
   width: 100%;
@@ -21,21 +21,4 @@ export const AvatarWrapper = styled.div`
 
 export const AvatarIcon = styled.i`
   font-size: 1.4rem;
-`;
-
-export const Logo = styled.a`
-  font-family: ${Fonts.INDIE_FLOWER};
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 2rem;
-  color: ${Colors.ACCENT};
-  letter-spacing: 1px;
-  padding: 4px;
-
-  &:hover {
-    color: ${Colors.ELEMENTS};
-    text-shadow: 2px 2px ${Colors.ACCENT};
-    border: 2px dashed ${Colors.ACCENT};
-    border-radius: 8px;
-  }
 `;

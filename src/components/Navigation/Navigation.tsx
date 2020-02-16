@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ListItem } from "components/shared";
+import { ListItem, Button } from "components/shared";
 import { NavigationWrapper, NavList, NavButton } from "./styles";
 
 export const Navigation: React.FC = () => {
@@ -7,10 +7,10 @@ export const Navigation: React.FC = () => {
     <NavigationWrapper>
       <NavList>
         <ListItem>
-          <NavButton to="/upload">
+          <Button>
             <i className="fas fa-plus" />
             &nbsp; Upload
-          </NavButton>
+          </Button>
         </ListItem>
         <ListItem>
           <NavButton to="/files">
